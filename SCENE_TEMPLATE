@@ -1,0 +1,43 @@
+# Scene Template — Video Media World
+
+Duplicate this template for each of the ten property photos.
+
+## Scene [01–10] — [Room / feature]
+
+- **Source photograph:** `01_filename.jpg`
+- **Verified facts to mention:** [only facts supplied or confirmed by the user]
+- **Purpose:** [hook / room introduction / feature / summary / CTA]
+- **Target duration:** 8–10 seconds
+- **Format:** Landscape 16:9
+
+### IMAGE PROMPT (English)
+
+Use the supplied property photograph as the strict reference for architecture, geometry, furniture, materials, colors, and perspective. Use the supplied portrait as the identity reference for the same bald adult male presenter with light-to-medium warm skin, oval face, defined dark eyebrows, straight nose, natural lips, black rectangular sunglasses, tailored blue blazer, and plain white crew-neck T-shirt. Preserve the presenter's identity and wardrobe. Place him naturally at the [left/right] third of a medium or medium-wide composition, keeping the key property features visible. He has a friendly, confident expression and natural posture. Preserve the room exactly as shown; do not redesign or invent features. Ultra-realistic premium real estate commercial, realistic skin and material textures, natural lighting, controlled highlights, accurate perspective, subtle depth of field, restrained film grain, professional color grading, landscape 16:9.
+
+**Negative prompt:** Different person, changed face, different sunglasses, changed clothing, facial hair, distorted hands, extra fingers, unnatural teeth, incorrect lip movement, warped walls, moving windows, changed furniture, invented rooms, altered flooring, floating objects, flicker, morphing, excessive wide-angle distortion, plastic skin, subtitles, incorrect text, logos, watermarks, rapid zooms, excessive camera movement.
+
+### VIDEO PROMPT (English, exact dialogue in Romanian)
+
+Create one continuous cinematic shot, target duration 8–10 seconds, landscape 16:9. The same presenter looks directly at the camera and speaks the following Romanian sentence exactly once: "[INSERT EXACT ROMANIAN LINE]". Use natural synchronized lip and jaw movement, subtle blinking, a restrained gesture, and a confident, warm, professional delivery. Camera movement: [ONE APPROPRIATE MOVE]. Preserve the exact room geometry, furniture, materials, lighting and presenter identity. No extra dialogue, no additional speakers, no subtitles, no on-screen text, no logos, no watermarks, no unnecessary cuts. Finish with a natural expression and relaxed mouth position.
+
+### Romanian dialogue
+
+[Exact line. Target roughly 12–18 words, adjusted for natural speaking speed.]
+
+### Camera movement
+
+[One controlled movement that suits the room.]
+
+### Manual transition
+
+[Cut / short dissolve / other restrained transition.]
+
+### Quality check
+
+- [ ] Presenter identity and wardrobe match the reference.
+- [ ] Presenter speaks directly to camera.
+- [ ] Romanian dialogue is clear and complete.
+- [ ] Lip movement appears synchronized.
+- [ ] Room architecture and visible objects match the source photo.
+- [ ] Important features are not hidden by the presenter.
+- [ ] Actual duration is 10 seconds or less after editing.
