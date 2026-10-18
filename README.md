@@ -1,61 +1,71 @@
-# Historical Documentary Video Workflow
+[README.md](https://github.com/user-attachments/files/33624032/README.md)
+# Real Estate Cinematic Video Workflow — Video Media World
 
-Create a documentary that explains **the history of a subject and how it was built**, using a photorealistic presenter introduction followed by animated watercolor scenes.
+A reusable adaptation of the browser-based VideoExpress documentary workflow for real estate property tours.
 
-## Requirements
+## What this repository is
 
-- A browser-capable agent that can follow the instructions in `SYSTEM_PROMPT.md`.
-- Access to [VideoExpress](https://app.videoexpress.ai/) and [CloneVoice](https://app.clonevoice.ai/), with generation access available.
-- Sign in when prompted. The workflow uses the agent's visible built-in browser unless you authorize another browser.
+This repository is a **prompt and operating-instructions package**, not a standalone executable application. It guides a browser-capable AI agent through preparing ten short property-video scenes in VideoExpress 3.5. The user reviews the generated assets and assembles the final video manually.
 
-This folder contains instructions for browser automation. It is not a standalone executable or a direct API workflow.
+## Production defaults
 
-## How to use
+- Brand: Video Media World
+- Tool: VideoExpress 3.5
+- Aspect ratio: Landscape 16:9
+- Scene count: exactly 10
+- Target clip duration: 8–10 seconds per scene; final edited clips must be no longer than 10 seconds
+- Presenter: user's supplied portrait, used as a consistent identity reference
+- Presenter presence: all ten scenes
+- Dialogue: Romanian, presenter speaks directly to camera
+- Lip sync: use the supported native speech or audio-driven lip-sync workflow; verify results rather than assuming success
+- Editing: manual assembly by the user
+- Property fidelity: preserve the source photos' real architecture, furniture, materials and layout
 
-1. Load `SYSTEM_PROMPT.md` as the instructions for your browser automation agent, or ask the agent to read and follow that file.
-2. Start the workflow. It asks four questions together:
+## Repository files
 
-   | Question | Default |
-   |---|---|
-   | Idea/Script | Supply a historical topic or your own script |
-   | Character | Daniel Reed, a fictional male presenter with a calm American English voice |
-   | Ratio | Landscape 16:9; Vertical 9:16 is also supported |
-   | Duration | 60 seconds total, up to 5 minutes |
+- `SYSTEM_PROMPT.md` — main instructions for the browser-capable agent.
+- `SCENE_TEMPLATE.md` — copy-ready template for each of the ten scenes.
+- `QUALITY_CHECKLIST.md` — review checklist for visual fidelity, presenter identity, dialogue, timing and editing.
+- `PROJECT_INPUT_TEMPLATE.md` — intake sheet for each new property.
 
-3. Reply with your choices. For example:
+## Prerequisites
 
-   ```text
-   Idea/Script: Explain the history of medieval London Bridge and how it was built.
-   Character: Keep the default.
-   Ratio: Landscape.
-   Duration: 120 seconds.
-   ```
+- Access to VideoExpress 3.5 and its supported generation features.
+- A browser-capable AI agent that can follow a system prompt and interact with the visible interface.
+- Ten property photographs, numbered in intended presentation order.
+- The user's presenter portrait available as a reference image.
+- Verified property facts and an approved Romanian call to action.
+- A video editor for manual assembly.
 
-4. Let the agent complete generation and timeline assembly. It saves the project and clicks **Export Video**, then stops. It does not download the video.
+Sign in yourself when the interface requests it. Never put passwords, API keys, or recovery codes into prompts or repository files.
 
-## What it creates
+## Start a new project
 
-**Presenter intro — at least 20 seconds:** A character sheet establishes the presenter. The agent saves it to My AI Images, uses it as a consistent-character reference for a location scene, then generates speaking clips with the same voice description. The intro gives context and introduces the history and construction story.
+1. Open `PROJECT_INPUT_TEMPLATE.md` and fill in the facts for the property.
+2. Prepare ten photographs and label them `01` through `10`.
+3. Load `SYSTEM_PROMPT.md` as the browser agent's instructions.
+4. Ask the agent to produce all ten scene prompt sets before generation.
+5. Generate and inspect a pilot scene before making the remaining nine.
+6. Generate each scene using the matching property image and presenter reference.
+7. Check each clip's actual duration and spoken dialogue.
+8. Assemble the ten clips manually in the intended order, balancing audio and adding restrained transitions.
+9. Export only after the final quality checklist passes.
 
-**Historical documentary:** Ethan Sterling narration is created in CloneVoice. Watercolor-and-ink visuals illustrate who, when and why, followed by materials, tools, transport and building methods. Clothing, equipment and architecture follow the subject's period and location.
+## Important limitations
 
-**Active multi-shot clips:** Prompts use `Total duration` and timed `SHOT 1 / SHOT 2 / SHOT 3` sections, with hard cuts and distinct camera angles. Workers carry, pour, place, compact and build through connected actions. Asset IDs and internal labels stay out of generation text; subtitles and visible shot labels are not requested.
+- A prompt cannot guarantee that VideoExpress supports simultaneous use of both references, native dialogue generation, or a particular lip-sync mode. Confirm the current interface's available controls.
+- A requested duration is not proof of the rendered duration. Check the actual clip and trim in the editor without cutting off dialogue.
+- The ten photographs are source-of-truth references. Never invent features, room layouts, measurements, legal status, views, prices or amenities.
+- If the presenter or room becomes visibly distorted, repair or regenerate that scene rather than accepting the defect.
+- This workflow does not automatically publish, share publicly, or claim to have exported a video.
 
-## Audio and video timing
+## Suggested GitHub fork workflow
 
-The requested duration guides the initial script. Once narration is completed, it is reused unchanged: no repeated generation, audio cuts, silence trimming or speed changes to force a target runtime.
+1. Fork `ai-playbooks/historical-documentary-video-workflow` to your account.
+2. Create a branch such as `real-estate-adaptation`.
+3. Replace the original `README.md` and `SYSTEM_PROMPT.md` with the versions in this package.
+4. Add `SCENE_TEMPLATE.md`, `QUALITY_CHECKLIST.md`, and `PROJECT_INPUT_TEMPLATE.md`.
+5. Review the original repository's license and attribution requirements before publishing your modified fork.
+6. Commit your changes and test the prompt on one property before scaling up.
 
-The narration starts after the actual intro endpoint. Video coverage extends to the audio clip's right edge. To remove excess footage, the agent places the playhead at that edge, selects the last video clip, clicks **Cut**, and deletes only the excess right-hand video chunk. The final length therefore follows the completed audio plus intro and can differ slightly from the initial estimate.
-
-## Working preferences
-
-- No routine audio/video playback QA or unrequested Share actions.
-- Presenter speech stays audible; documentary clip audio is muted beneath the narration.
-- Reuse completed assets when resuming a production.
-- Edit instructions in place; do not create timestamped backup prompts or unnecessary reports.
-- Generated visuals and voice consistency can vary. Review the saved result before publishing.
-
-## Files
-
-- [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) — instructions the automation agent follows.
-- `README.md` — this short usage guide.
+The package is prepared locally for review. It has not been pushed to GitHub, and no fork is claimed to have been created by this package.
