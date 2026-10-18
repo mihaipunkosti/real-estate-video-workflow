@@ -1,0 +1,40 @@
+# Quality Checklist — Video Media World
+
+## Before generation
+- [ ] Ten source photos are present and numbered in intended order.
+- [ ] Presenter portrait is accessible as a reference.
+- [ ] Property facts and call to action are verified.
+- [ ] Ten scene purposes and Romanian lines are prepared.
+- [ ] Each scene has one camera movement and its own Image Prompt + Video Prompt.
+- [ ] Pilot scene has been generated and reviewed before scaling to all ten.
+
+## For every generated scene
+- [ ] Landscape 16:9.
+- [ ] Presenter is visible and speaks directly to camera.
+- [ ] Face, sunglasses, blue blazer and white T-shirt remain consistent.
+- [ ] Lip-sync has been visually reviewed; do not infer success from the prompt alone.
+- [ ] Spoken line matches the approved Romanian text.
+- [ ] No unsupported property claim is spoken.
+- [ ] Architecture, furniture, finishes, doors and windows remain faithful to the source.
+- [ ] No invented rooms, views, fixtures, or amenities.
+- [ ] Camera movement is controlled and does not warp the room.
+- [ ] Actual clip duration has been checked.
+- [ ] Any defect is logged and corrected before final assembly.
+
+## Manual edit
+- [ ] All ten clips are in the intended order.
+- [ ] No unintended gaps or duplicate clips.
+- [ ] Each final clip is no longer than 10 seconds.
+- [ ] No dialogue is cut off at a trim point.
+- [ ] Voice is clear and consistent.
+- [ ] Music, if used, remains below dialogue.
+- [ ] Transitions are restrained and consistent.
+- [ ] Any on-screen price, address, or contact detail is verified separately.
+- [ ] No public sharing or publishing occurred without permission.
+
+## Export readiness
+- [ ] Final timeline reviewed.
+- [ ] Final duration is measured, not estimated from requested clip lengths.
+- [ ] Aspect ratio is 16:9 throughout.
+- [ ] Final call to action uses supplied, verified information.
+- [ ] Export is confirmed by the editing application's actual result.
